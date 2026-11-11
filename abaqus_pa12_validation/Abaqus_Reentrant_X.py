@@ -5,16 +5,22 @@
 # GEOMETRY WARNING: dimensions and topology of the published image are not
 # reconciled. TABLE mode preserves local dimensions + nominal cutting box;
 # IMAGE mode preserves 15 vertical intervals but has a different global box.
+# Abaqus/CAE may inject its own sum/min/max into Run Script globals.
+# Always qualify numerical helpers with the real Python builtins module.
+try:
+    import builtins as _py
+except ImportError:
+    import __builtin__ as _py
 import argparse, math, json, os
 from collections import defaultdict
 
 def clip(p,q,box):
     lo,hi=0.,1.; dx=q[0]-p[0];dy=q[1]-p[1]
     for v,w in [(-dx,p[0]-box[0]),(dx,box[2]-p[0]),(-dy,p[1]-box[1]),(dy,box[3]-p[1])]:
-        if abs(v)<1e-12:
+        if _py.abs(v)<1e-12:
             if w<0:return None
-        elif v<0:lo=max(lo,w/v)
-        else:hi=min(hi,w/v)
+        elif v<0:lo=_py.max(lo,w/v)
+        else:hi=_py.min(hi,w/v)
     if hi-lo<1e-8:return None
     return ((p[0]+lo*dx,p[1]+lo*dy),(p[0]+hi*dx,p[1]+hi*dy))
 
@@ -30,9 +36,9 @@ def lattice(c):
                 p=poly[k];q=poly[(k+1)%6]
                 seg=clip((p[0]+sx,p[1]+sy),(q[0]+sx,q[1]+sy),(t/2,t/2,W-t/2,V-t/2))
                 if seg:
-                    key=tuple(sorted(tuple(round(v,8) for v in p) for p in seg));result[key]=key
+                    key=tuple(_py.sorted(tuple(_py.round(v,8) for v in p) for p in seg));result[key]=key
     # Cropping can leave detached edge fragments. Keep the connected specimen.
-    edges=sorted(result.values());graph=defaultdict(set)
+    edges=_py.sorted(result.values());graph=defaultdict(set)
     for p,q in edges:graph[p].add(q);graph[q].add(p)
     unseen=set(graph);components=[]
     while unseen:
@@ -42,7 +48,7 @@ def lattice(c):
             for q in graph[p]:
                 if q in unseen:unseen.remove(q);stack.append(q)
         components.append(component)
-    keep=max(components,key=len)
+    keep=_py.max(components,key=len)
     return [(p,q) for p,q in edges if p in keep and q in keep]
 
 def build(c,dest):
@@ -56,12 +62,12 @@ def build(c,dest):
     else:segs=lattice(c)
     nodes=[];lookup={};els=[]
     def node(x,y,z):
-        key=tuple(round(v,7) for v in (x,y,z))
+        key=tuple(_py.round(v,7) for v in (x,y,z))
         if key not in lookup:lookup[key]=len(nodes)+1;nodes.append(key)
         return lookup[key]
     nz=int(math.ceil(c['depth']/c['mesh']))
     for p,q in segs:
-        n=max(1,int(math.ceil(math.hypot(q[0]-p[0],q[1]-p[1])/c['mesh'])))
+        n=_py.max(1,int(math.ceil(math.hypot(q[0]-p[0],q[1]-p[1])/c['mesh'])))
         grid=[]
         for i in range(n+1):
             x=p[0]+(q[0]-p[0])*i/n;y=p[1]+(q[1]-p[1])*i/n
@@ -101,7 +107,7 @@ def build(c,dest):
         w('RP_TOP, 2, 2, %.9g'%-c['speed'])
         w('*Output, field, number interval=200\n*Node Output\nU, V, RF\n*Element Output, elset=SPECIMEN\nS, LE, PEEQ\n*Output, history, time interval=%.9g'%(duration/1000))
         w('*Node Output, nset=RP_TOP\nU2, RF2\n*Energy Output\nALLIE, ALLKE, ALLAE, ALLVD, ALLFD, ETOTAL\n*End Step')
-    length=sum(math.hypot(q[0]-p[0],q[1]-p[1]) for p,q in segs)
+    length=_py.sum(math.hypot(q[0]-p[0],q[1]-p[1]) for p,q in segs)
     meta=dict(c,segments=len(segs),shell_nodes=ns,shell_elements=ne,top_rp=rps[1],bottom_rp=rps[0],duration=duration,
               shell_volume_mm3=length*c['thickness']*c['depth'],shell_mass_g=length*c['thickness']*c['depth']*.001,
               shell_relative_density=length*c['thickness']/(c['width']*c['height']),
