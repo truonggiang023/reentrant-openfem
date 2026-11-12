@@ -1,0 +1,18 @@
+{
+  "full_mesh2_v1000": {
+    "geometry": "TABLE - rejected for mismatch with published image",
+    "requested_stop_reason": "User reiterated geometry check; do not treat run as validated",
+    "last_logged_cycle": 74700,
+    "last_logged_time_s": 0.018167,
+    "last_logged_nominal_strain": 0.28385937499999997,
+    "full_loading_completed": false
+  },
+  "full_mesh4_v1000": {
+    "geometry": "TABLE - rejected for mismatch with published image",
+    "requested_stop_reason": "User reiterated geometry check; do not treat run as validated",
+    "last_logged_cycle": 86700,
+    "last_logged_time_s": 0.026416,
+    "last_logged_nominal_strain": 0.41274999999999995,
+    "full_loading_completed": false
+  }
+}

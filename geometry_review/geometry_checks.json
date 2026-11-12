@@ -1,0 +1,19 @@
+{
+  "horizontal_levels": 16,
+  "vertical_intervals": 15,
+  "top_full_horizontal_members": 7,
+  "top_half_members": 1,
+  "bottom_full_horizontal_members": 7,
+  "bottom_half_members": 1,
+  "left_and_right_vertical_boundary_members": 0,
+  "closed_outer_frame": false,
+  "global_box_mm": [
+    80.0,
+    64.0,
+    30.0
+  ],
+  "inferred_centerline_H_mm": 8.815406446026941,
+  "inferred_centerline_L_mm": 5.500116045720001,
+  "inclination_deg": 50.0,
+  "all_paper_dimensions_confirmed": false
+}

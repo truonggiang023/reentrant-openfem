@@ -18,11 +18,20 @@ def clip(p,q,box):
     lo,hi=0.,1.; dx=q[0]-p[0];dy=q[1]-p[1]
     for v,w in [(-dx,p[0]-box[0]),(dx,box[2]-p[0]),(-dy,p[1]-box[1]),(dy,box[3]-p[1])]:
         if _py.abs(v)<1e-12:
-            if w<0:return None
+            # Keep horizontal/vertical members on the trim boundary despite
+            # floating-point roundoff (e.g. 63.60000000000001 vs 63.6).
+            if w < -1.e-8:return None
         elif v<0:lo=_py.max(lo,w/v)
         else:hi=_py.min(hi,w/v)
     if hi-lo<1e-8:return None
-    return ((p[0]+lo*dx,p[1]+lo*dy),(p[0]+hi*dx,p[1]+hi*dy))
+    def point(t):
+        x=p[0]+t*dx;y=p[1]+t*dy
+        for bound in (box[0],box[2]):
+            if _py.abs(x-bound)<1.e-8:x=bound
+        for bound in (box[1],box[3]):
+            if _py.abs(y-bound)<1.e-8:y=bound
+        return (x,y)
+    return (point(lo),point(hi))
 
 def lattice(c):
     # Rotated Fig.1(b): local H walls horizontal; original paper X is global Y here.

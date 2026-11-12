@@ -1,5 +1,8 @@
 # Mô hình PA12 re-entrant trên solver mã nguồn mở
 
+
+**CẬP NHẬT HÌNH HỌC:** bản TABLE dưới đây không khớp số hàng/biên trong ảnh nguồn và đã bị loại cho mục tiêu validation. Đọc [geometry_review](../geometry_review/README.md) trước khi chạy tiếp. Các phép nén dài TABLE trên cloud đã được ngắt chủ động; chưa có đường nén hoàn chỉnh được validation. Bản vá cắt biên giữ lại các thanh nằm đúng biên nhưng không tự giải quyết cách hiểu H/L₁.
+
 Bộ này tạo input **native Radioss `.rad`**, chạy **OpenCourant** (dự án tiếp nối OpenRadioss), xuất CSV lực/ứng suất/biến dạng và VTK để xem trong **ParaView**. Không cần Abaqus hoặc license thương mại. Cùng mesh được xuất thêm `.inp` để đối chiếu; formulation/contact của hai solver không đồng nhất.
 
 **Đây là bộ triển khai để tự chạy, chưa tái lập định lượng bài báo.** Có cảnh báo tự tiếp xúc ban đầu tại các giao thành shell và mâu thuẫn hình học đã nêu ở dưới. Chạy xong Engine không có nghĩa là validation đã đạt.
