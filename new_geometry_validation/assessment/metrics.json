@@ -1,0 +1,175 @@
+{
+  "new_geometry_runs": {
+    "envelope_nz1_full": {
+      "geometry_assumption": "envelope",
+      "frame_mm": [
+        80.0,
+        64.0,
+        30.0
+      ],
+      "H_centerline_mm": 8.815406446026941,
+      "L_centerline_mm": 5.500116045720001,
+      "angle_deg": 50.0,
+      "thickness_mm": 0.8,
+      "extrusion_layers": 1,
+      "inplane_mesh_mm": 2.0,
+      "elements": 1283,
+      "speed_mm_s": 100.0,
+      "E_OLS_0_to_1percent_MPa": 8.179794276243667,
+      "E_intercept_MPa": 0.0008678847348909392,
+      "reference_E_Table3_MPa": 9.7,
+      "E_relative_error_percent": -15.672223956250841,
+      "mass_g": 55.08899717316817,
+      "max_core_KE_IE_window_0_06_to_0_40": 0.002612441995362668,
+      "energy_error_percent": -6.1,
+      "normal_termination": true,
+      "last_strain": 0.49950046875,
+      "comparisons": {
+        "Alomarah_Fig9_Specimen1": {
+          "RMSE_MPa": 0.37322064633832824,
+          "RMSE_over_reference_mean_percent": 47.27344173651653,
+          "comparison_window": [
+            0.06,
+            0.4
+          ],
+          "stress_at_strain_0_2_MPa": 0.3664554176872857,
+          "reference_stress_at_strain_0_2_MPa": 0.639030612244898,
+          "mean_stress_shared_window_MPa": 0.41032740564228604,
+          "reference_mean_stress_shared_window_MPa": 0.6886065988447629,
+          "mean_window": [
+            0.06,
+            0.32
+          ]
+        },
+        "Chen_Fig4_replotted_experiment": {
+          "RMSE_MPa": 0.3045404525037789,
+          "RMSE_over_reference_mean_percent": 42.57220772585711,
+          "comparison_window": [
+            0.06,
+            0.4
+          ],
+          "stress_at_strain_0_2_MPa": 0.3664554176872857,
+          "reference_stress_at_strain_0_2_MPa": 0.5476190476190477,
+          "mean_stress_shared_window_MPa": 0.41032740564228604,
+          "reference_mean_stress_shared_window_MPa": 0.6076343460461107,
+          "mean_window": [
+            0.06,
+            0.32
+          ],
+          "extended_comparison": {
+            "window": [
+              0.06,
+              0.49
+            ],
+            "RMSE_MPa": 0.47864315289859405,
+            "RMSE_over_reference_mean_percent": 50.87308356195234,
+            "stress_at_0_49_MPa": 1.276700562233137,
+            "reference_stress_at_0_49_MPa": 2.511064425770308
+          }
+        }
+      },
+      "paper_validated": false,
+      "normalization": "Own geometry frame width*30 and own height; local case does not have the paper 80x64 frame."
+    },
+    "local_nz1_full": {
+      "geometry_assumption": "local",
+      "frame_mm": [
+        77.4118363461586,
+        52.50799991053101,
+        30.0
+      ],
+      "H_centerline_mm": 8.0,
+      "L_centerline_mm": 4.5,
+      "angle_deg": 50.0,
+      "thickness_mm": 0.8,
+      "extrusion_layers": 1,
+      "inplane_mesh_mm": 2.0,
+      "elements": 1155,
+      "speed_mm_s": 100.0,
+      "E_OLS_0_to_1percent_MPa": 11.905620061333755,
+      "E_intercept_MPa": 0.001047064775769378,
+      "reference_E_Table3_MPa": 9.7,
+      "E_relative_error_percent": 22.738351147770675,
+      "mass_g": 47.33999999896465,
+      "max_core_KE_IE_window_0_06_to_0_40": 0.0029030800383934817,
+      "energy_error_percent": -10.7,
+      "normal_termination": true,
+      "last_strain": 0.49950045792431247,
+      "comparisons": {
+        "Alomarah_Fig9_Specimen1": {
+          "RMSE_MPa": 0.09015135747285166,
+          "RMSE_over_reference_mean_percent": 11.41888849604905,
+          "comparison_window": [
+            0.06,
+            0.4
+          ],
+          "stress_at_strain_0_2_MPa": 0.6120680895824979,
+          "reference_stress_at_strain_0_2_MPa": 0.639030612244898,
+          "mean_stress_shared_window_MPa": 0.6714931446582572,
+          "reference_mean_stress_shared_window_MPa": 0.6886065988447629,
+          "mean_window": [
+            0.06,
+            0.32
+          ]
+        },
+        "Chen_Fig4_replotted_experiment": {
+          "RMSE_MPa": 0.07623200268827444,
+          "RMSE_over_reference_mean_percent": 10.65659628177983,
+          "comparison_window": [
+            0.06,
+            0.4
+          ],
+          "stress_at_strain_0_2_MPa": 0.6120680895824979,
+          "reference_stress_at_strain_0_2_MPa": 0.5476190476190477,
+          "mean_stress_shared_window_MPa": 0.6714931446582572,
+          "reference_mean_stress_shared_window_MPa": 0.6076343460461107,
+          "mean_window": [
+            0.06,
+            0.32
+          ],
+          "extended_comparison": {
+            "window": [
+              0.06,
+              0.49
+            ],
+            "RMSE_MPa": 0.17390994238034252,
+            "RMSE_over_reference_mean_percent": 18.48419846265698,
+            "stress_at_0_49_MPa": 1.8767024606964873,
+            "reference_stress_at_0_49_MPa": 2.511064425770308
+          }
+        }
+      },
+      "paper_validated": false,
+      "normalization": "Own geometry frame width*30 and own height; local case does not have the paper 80x64 frame."
+    }
+  },
+  "depth_mesh_sensitivity": {
+    "envelope": {
+      "RMSE_1_vs_3_layers_MPa": 0.036982764810838585,
+      "relative_RMSE_over_3layer_mean_percent": 8.823509017940044,
+      "window": [
+        0.02,
+        0.099
+      ],
+      "E_1layer_MPa": 8.179794276243667,
+      "E_3layer_MPa": 8.946335746239178,
+      "E_change_percent": 9.371158296997217,
+      "convergence_of_full_50percent_crushing_established": false,
+      "convergence_to_paper_1mm_3D_mesh_established": false
+    },
+    "local": {
+      "RMSE_1_vs_3_layers_MPa": 0.05175743307959945,
+      "relative_RMSE_over_3layer_mean_percent": 8.405662897416978,
+      "window": [
+        0.02,
+        0.099
+      ],
+      "E_1layer_MPa": 11.905620061333755,
+      "E_3layer_MPa": 12.97098501264547,
+      "E_change_percent": 8.948420542763103,
+      "convergence_of_full_50percent_crushing_established": false,
+      "convergence_to_paper_1mm_3D_mesh_established": false
+    }
+  },
+  "overall_status": "Agreement assessment only; geometry metric definition and original 1 mm 3D convergence unresolved"
+}

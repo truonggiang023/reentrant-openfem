@@ -1,0 +1,17 @@
+{
+  "width": 77.4118363461586,
+  "height": 52.50799991053101,
+  "depth": 30.0,
+  "H_wall": 8.0,
+  "L_inclined": 4.5,
+  "theta": 50.0,
+  "thickness": 0.8,
+  "mesh": 2.0,
+  "friction": 0.25,
+  "speed": 100.0,
+  "end_strain": 0.02,
+  "ramp": 0.0,
+  "phase_x": 1.5074557564105726,
+  "phase_y": 3.847199994035401,
+  "mode": "IMAGE_LOCAL_CENTERLINE_DIMENSIONS"
+}

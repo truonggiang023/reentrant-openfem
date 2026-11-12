@@ -1,0 +1,6 @@
+NEW GEOMETRY runs completed to 50% strain for two explicitly labelled hypotheses.
+These are not rejected TABLE results. Full curves use 2 mm in-plane mesh and one
+Z layer. Z-depth checks reach 10%; a 1 mm/3-layer probe reaches 2% only.
+Paper validation is NOT established: unresolved geometric metric interpretation,
+mesh/contact sensitivity, nonzero energy balance errors and response differences.
+No paper figures, PDFs or raw/digitized reference-curve datasets are in this package.

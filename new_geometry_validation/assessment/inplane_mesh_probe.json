@@ -1,0 +1,14 @@
+{
+  "geometry": "NEW local",
+  "Z_layers": 3,
+  "mesh1_E_MPa": 12.171482413181122,
+  "mesh2_E_MPa": 12.97098501264547,
+  "change_percent": -6.163777066158882,
+  "reference_Table3_MPa": 9.7,
+  "mesh1_E_error_percent": 25.47920013588787,
+  "mesh1_starter_warning_ids": [
+    343
+  ],
+  "target_strain": 0.02,
+  "full_crushing_convergence_established": false
+}

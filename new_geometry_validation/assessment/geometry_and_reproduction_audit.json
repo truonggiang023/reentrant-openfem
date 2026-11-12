@@ -1,0 +1,77 @@
+{
+  "envelope_nz1_full": {
+    "geometry": "envelope",
+    "horizontal_levels": 16,
+    "segments": 353,
+    "elements": 1283,
+    "Z_layers": 1,
+    "mesh_mm": 2.0,
+    "speed_mm_s": 100.0,
+    "input_reproduction_byte_identical": true,
+    "files": {
+      "centerlines.csv": "8a6b06508ea3043e66fa7fdeb7a3497606d6bcc3b26499f1b3bfc8ee4a0578b2",
+      "compression_0000.rad": "a45a48bb746c57f91ed4b32cbd43e583bd09e57391f4e5d19fe79a76c51629e2",
+      "compression_0001.rad": "692ddaa7cd4cad6e214d306986521767cb47a178a99f0706ab098cfaec9d2229"
+    }
+  },
+  "local_nz1_full": {
+    "geometry": "local",
+    "horizontal_levels": 16,
+    "segments": 353,
+    "elements": 1155,
+    "Z_layers": 1,
+    "mesh_mm": 2.0,
+    "speed_mm_s": 100.0,
+    "input_reproduction_byte_identical": true,
+    "files": {
+      "centerlines.csv": "ab242a07073e362648ad98358598a4045ef99b739e38634f5e8a2fe1abfabda8",
+      "compression_0000.rad": "cafcc253fa6a6435acb2dd436085b6292f4be79b4568fff6459d0c87c83b9af9",
+      "compression_0001.rad": "4767c65bb6a2a291dd04138cba7fd480d4af9df3e8fcc81ee80a44c430e25128"
+    }
+  },
+  "envelope_nz3_probe": {
+    "geometry": "envelope",
+    "horizontal_levels": 16,
+    "segments": 353,
+    "elements": 3849,
+    "Z_layers": 3,
+    "mesh_mm": 2.0,
+    "speed_mm_s": 100.0,
+    "input_reproduction_byte_identical": true,
+    "files": {
+      "centerlines.csv": "8a6b06508ea3043e66fa7fdeb7a3497606d6bcc3b26499f1b3bfc8ee4a0578b2",
+      "compression_0000.rad": "4820cf5ba3a221f2286b2d6878d41e0181e7e7d02c9e14673b9690f93f98ce62",
+      "compression_0001.rad": "6cd722128af3f24787e2ca6b36c78abb2f4324252161a7cba312da0503639662"
+    }
+  },
+  "local_nz3_probe": {
+    "geometry": "local",
+    "horizontal_levels": 16,
+    "segments": 353,
+    "elements": 3465,
+    "Z_layers": 3,
+    "mesh_mm": 2.0,
+    "speed_mm_s": 100.0,
+    "input_reproduction_byte_identical": true,
+    "files": {
+      "centerlines.csv": "ab242a07073e362648ad98358598a4045ef99b739e38634f5e8a2fe1abfabda8",
+      "compression_0000.rad": "be5adb05cc5bb67ccf0cff78850721b0cfe71f56acc06bfec41e0102708353a2",
+      "compression_0001.rad": "d6b8221d08d462d0905063e2c503218d9e967ccfc2a4da73e905b13e86235d9a"
+    }
+  },
+  "local_nz3_mesh1_probe": {
+    "geometry": "local",
+    "horizontal_levels": 16,
+    "segments": 353,
+    "elements": 6255,
+    "Z_layers": 3,
+    "mesh_mm": 1.0,
+    "speed_mm_s": 100.0,
+    "input_reproduction_byte_identical": true,
+    "files": {
+      "centerlines.csv": "ab242a07073e362648ad98358598a4045ef99b739e38634f5e8a2fe1abfabda8",
+      "compression_0000.rad": "988053e47fefd15474a7524c1bbb2d2647f61be7d341dbe5024cf198c809da18",
+      "compression_0001.rad": "4e5ec7a275fc8f417af085846278f32555c8525faadf094f72c15a3eeaf32bdf"
+    }
+  }
+}

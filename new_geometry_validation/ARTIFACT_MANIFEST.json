@@ -1,0 +1,295 @@
+{
+  "description": "Generated FEM project/results only; no attached PDFs, source-paper images or digitized reference-curve files.",
+  "files": [
+    {
+      "path": "NOT_PAPER_VALIDATED.txt",
+      "bytes": 485,
+      "sha256": "3dd087b034c0d492f6b24fb0280ba7e008159becdfe44664843a7e6bdb35db5a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 10852,
+      "sha256": "9e16f956a1423f51d57d23e28c28e8aa5cf69e7ebf3fbb345689893184e7085f"
+    },
+    {
+      "path": "assessment/depth_sensitivity.svg",
+      "bytes": 87026,
+      "sha256": "a5befb42c5e2f1732114865611cd147f295630c39d9633f1c1ecad6109b4e64e"
+    },
+    {
+      "path": "assessment/envelope_deformation.png",
+      "bytes": 269756,
+      "sha256": "07d25b81621caa6b0d56a1f0860cf8116445e4d3ce07a8bb83e04106a262abec"
+    },
+    {
+      "path": "assessment/geometry_and_reproduction_audit.json",
+      "bytes": 2744,
+      "sha256": "85091ba218df44660f3f9cda235faf26ac2bd5d6a5e385d6187c348d46630ee5"
+    },
+    {
+      "path": "assessment/inplane_mesh_probe.json",
+      "bytes": 358,
+      "sha256": "daa93d072362dddffec8e4aa45e6d6234e80c9998c2c9867a65dee002a3530cd"
+    },
+    {
+      "path": "assessment/local_deformation.png",
+      "bytes": 241988,
+      "sha256": "26a628d590e3c362bde622df3d46b9670b226bf5d805256cd222a126e5c4c0e8"
+    },
+    {
+      "path": "assessment/metrics.json",
+      "bytes": 6048,
+      "sha256": "4a065dc9c2257c0980221bd94efa3f0d8c7c8d8abbdec86ca18d300acba2c70f"
+    },
+    {
+      "path": "assessment/simulation_results_only.svg",
+      "bytes": 132452,
+      "sha256": "30e044721e189a4bfa6da215976706e0aeae2ca4ef808d5c9c37e49dec4841a8"
+    },
+    {
+      "path": "code/build_radioss.py",
+      "bytes": 7246,
+      "sha256": "a3f27590eea04a1a1b11f637d650d70651a342b1c79fa25d312fd7bff05f5069"
+    },
+    {
+      "path": "code/geometry_core.py",
+      "bytes": 7219,
+      "sha256": "0002f78954d845212794fea6ca5da086497ddbc7e233571682e26a9f6109ed06"
+    },
+    {
+      "path": "code/postprocess.py",
+      "bytes": 4025,
+      "sha256": "b4f64772d36595d6d7602f2b842f3e5c33ff638c07c4aa9b9daf30e9c2f48c85"
+    },
+    {
+      "path": "code/run_solver.py",
+      "bytes": 4742,
+      "sha256": "b3359f1490c89618dcaca650050b54144944210c4b7195a4cd0cd7e6bd2e9303"
+    },
+    {
+      "path": "configs/envelope.json",
+      "bytes": 359,
+      "sha256": "a5293b0edbbed0ab5914b61bb50c015f380b755f32952a5e8c36cabd41f589b8"
+    },
+    {
+      "path": "configs/local.json",
+      "bytes": 357,
+      "sha256": "5848d73cde454c317cd18e585df085f049745c37c3aefdad62a486b0563b1a85"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 28,
+      "sha256": "3375370eec2c6a1f458a4abab8f8f13f27981197d3b20cb8b14fb200dacf3fca"
+    },
+    {
+      "path": "results/envelope_nz1_full/compression_0000.rad",
+      "bytes": 240153,
+      "sha256": "a45a48bb746c57f91ed4b32cbd43e583bd09e57391f4e5d19fe79a76c51629e2"
+    },
+    {
+      "path": "results/envelope_nz1_full/compression_0001.rad",
+      "bytes": 236,
+      "sha256": "692ddaa7cd4cad6e214d306986521767cb47a178a99f0706ab098cfaec9d2229"
+    },
+    {
+      "path": "results/envelope_nz1_full/compression_curve.csv",
+      "bytes": 274560,
+      "sha256": "482eb6743ed74a7cd07f3553a8d57612c6b10f5404e1a484633cb23921623395"
+    },
+    {
+      "path": "results/envelope_nz1_full/engine.log",
+      "bytes": 681823,
+      "sha256": "1db260bff721c1cf3e5c0773cea6c3060b58c4810c5c4986c76e8dbffb163311"
+    },
+    {
+      "path": "results/envelope_nz1_full/model.json",
+      "bytes": 1350,
+      "sha256": "c7e996a16ce3794ead4228f692aea81f9e93a7066765ea5e8e89bfc238dac3ef"
+    },
+    {
+      "path": "results/envelope_nz1_full/run_status.json",
+      "bytes": 506,
+      "sha256": "760164c7315007fb507f2d39c49519aa1877fb06c83e5676ba270bf735369e5a"
+    },
+    {
+      "path": "results/envelope_nz1_full/starter.log",
+      "bytes": 4174,
+      "sha256": "b88f82aff8d660824e900b23e854adf712f26a4a3a1cfb13145fc75eafcdb07a"
+    },
+    {
+      "path": "results/envelope_nz1_full/summary.json",
+      "bytes": 721,
+      "sha256": "b8b268ff0b52ba19b12f9f5f1877089def4e439c353550a5175827fe22b5152b"
+    },
+    {
+      "path": "results/envelope_nz3_probe/compression_0000.rad",
+      "bytes": 539431,
+      "sha256": "4820cf5ba3a221f2286b2d6878d41e0181e7e7d02c9e14673b9690f93f98ce62"
+    },
+    {
+      "path": "results/envelope_nz3_probe/compression_0001.rad",
+      "bytes": 236,
+      "sha256": "6cd722128af3f24787e2ca6b36c78abb2f4324252161a7cba312da0503639662"
+    },
+    {
+      "path": "results/envelope_nz3_probe/compression_curve.csv",
+      "bytes": 274311,
+      "sha256": "df8ebcb2a40694fc8e087704f62ac82dfa164fd489cc1b2d2894dda6db710c6f"
+    },
+    {
+      "path": "results/envelope_nz3_probe/engine.log",
+      "bytes": 156229,
+      "sha256": "48d76df98d21a9555eb30ce603eaa6651daeb079ed629ddef0c9574c85c4040a"
+    },
+    {
+      "path": "results/envelope_nz3_probe/model.json",
+      "bytes": 1351,
+      "sha256": "fc8c7994338daf19616105a65ab5f0f105713b52b961866bc6a14da674d6ff0b"
+    },
+    {
+      "path": "results/envelope_nz3_probe/run_status.json",
+      "bytes": 508,
+      "sha256": "cdb839f798eb5944dc90ac840216f323be2a6ed659ebbd98c8d431b5072f8998"
+    },
+    {
+      "path": "results/envelope_nz3_probe/starter.log",
+      "bytes": 4650,
+      "sha256": "2893aa3a46613aae911958c07b82029c2fb4d44e92fa085f7acde7ff1fedf69c"
+    },
+    {
+      "path": "results/envelope_nz3_probe/summary.json",
+      "bytes": 721,
+      "sha256": "03cb7cedf253efb55ce2b946c25c428f9e03ed42634f9dd284f84046c0719af2"
+    },
+    {
+      "path": "results/local_nz1_full/compression_0000.rad",
+      "bytes": 215449,
+      "sha256": "cafcc253fa6a6435acb2dd436085b6292f4be79b4568fff6459d0c87c83b9af9"
+    },
+    {
+      "path": "results/local_nz1_full/compression_0001.rad",
+      "bytes": 236,
+      "sha256": "4767c65bb6a2a291dd04138cba7fd480d4af9df3e8fcc81ee80a44c430e25128"
+    },
+    {
+      "path": "results/local_nz1_full/compression_curve.csv",
+      "bytes": 274560,
+      "sha256": "c73b68dacebbb0a726736359b2871bbbe16cb6af9a8d6455706df5d77e8b69c5"
+    },
+    {
+      "path": "results/local_nz1_full/engine.log",
+      "bytes": 587442,
+      "sha256": "48603bf5bcf8566c777d672c038c62e49f4371c0b751026bc2558cf622300b66"
+    },
+    {
+      "path": "results/local_nz1_full/model.json",
+      "bytes": 1358,
+      "sha256": "41251773077d0c0779b6f137bd8287abd43fd14b685f7206de6ebbcdb4547983"
+    },
+    {
+      "path": "results/local_nz1_full/run_status.json",
+      "bytes": 500,
+      "sha256": "8ff55ef7359d18554e8789655f5cc1712501c1fb4f0725291047a3e337476db3"
+    },
+    {
+      "path": "results/local_nz1_full/starter.log",
+      "bytes": 4174,
+      "sha256": "1f18fc374cafd38e905ccfcb5d494dfde4db853eb97685ebf0aa4d386246319b"
+    },
+    {
+      "path": "results/local_nz1_full/summary.json",
+      "bytes": 744,
+      "sha256": "e2dd49f2c023cfc26368daf60daef878f74398cdc50c649648f8f1d52e529eee"
+    },
+    {
+      "path": "results/local_nz3_mesh1_probe/compression_0000.rad",
+      "bytes": 889905,
+      "sha256": "988053e47fefd15474a7524c1bbb2d2647f61be7d341dbe5024cf198c809da18"
+    },
+    {
+      "path": "results/local_nz3_mesh1_probe/compression_0001.rad",
+      "bytes": 236,
+      "sha256": "4e5ec7a275fc8f417af085846278f32555c8525faadf094f72c15a3eeaf32bdf"
+    },
+    {
+      "path": "results/local_nz3_mesh1_probe/compression_curve.csv",
+      "bytes": 274262,
+      "sha256": "3e03519cb55dd44f5e387e8d64028e2d1c994acabda21764fd8f72ffd88ded2b"
+    },
+    {
+      "path": "results/local_nz3_mesh1_probe/engine.log",
+      "bytes": 38979,
+      "sha256": "8621faa1eb9a0030409a26abb4ec24724912cfd36416fc48e5150e96e1aef6c2"
+    },
+    {
+      "path": "results/local_nz3_mesh1_probe/model.json",
+      "bytes": 1360,
+      "sha256": "322ce4a59a525b28a488c421133d0003f65069a2dd5890223d54e80842bff3e3"
+    },
+    {
+      "path": "results/local_nz3_mesh1_probe/run_status.json",
+      "bytes": 528,
+      "sha256": "a06732d350872cf616f4a1654e52b022d21d271478be8cb2098239bb107068ad"
+    },
+    {
+      "path": "results/local_nz3_mesh1_probe/starter.log",
+      "bytes": 6096,
+      "sha256": "baf3b469c9fe4a50c4f4ea67ae2c5e5f8696bcaf0101736afc3f85f88b38b2f9"
+    },
+    {
+      "path": "results/local_nz3_mesh1_probe/summary.json",
+      "bytes": 757,
+      "sha256": "137fc5a6a53ea78a7a730051cebc1d1f1b475f1e696298469c1222a7c6460b5c"
+    },
+    {
+      "path": "results/local_nz3_probe/compression_0000.rad",
+      "bytes": 483495,
+      "sha256": "be5adb05cc5bb67ccf0cff78850721b0cfe71f56acc06bfec41e0102708353a2"
+    },
+    {
+      "path": "results/local_nz3_probe/compression_0001.rad",
+      "bytes": 236,
+      "sha256": "d6b8221d08d462d0905063e2c503218d9e967ccfc2a4da73e905b13e86235d9a"
+    },
+    {
+      "path": "results/local_nz3_probe/compression_curve.csv",
+      "bytes": 274290,
+      "sha256": "f32a4abdf678019a44834bc4a5130601bd57e715904d98f153adbfeb51137ea4"
+    },
+    {
+      "path": "results/local_nz3_probe/engine.log",
+      "bytes": 107319,
+      "sha256": "198dd2e50adb140b0ef4441f09a9b63024e1031cf95732794102d5dd21a1dcfc"
+    },
+    {
+      "path": "results/local_nz3_probe/model.json",
+      "bytes": 1358,
+      "sha256": "637408b401dcbb313e0032810a27d5d6ecc857854e2294e8df7b2727072651dc"
+    },
+    {
+      "path": "results/local_nz3_probe/run_status.json",
+      "bytes": 502,
+      "sha256": "2bd9e7592e4bb4b3a688dc4fbc8c2928383eaea0bfb2e4364b916931c19128f0"
+    },
+    {
+      "path": "results/local_nz3_probe/starter.log",
+      "bytes": 4650,
+      "sha256": "e2cca18101cecbe1fc59808c522025aa385799bae9c5e6931dc31f2496aadf7f"
+    },
+    {
+      "path": "results/local_nz3_probe/summary.json",
+      "bytes": 744,
+      "sha256": "70188877645b89d36dcff63d29079e524f0e6cc367de5cc9ecc65a245c4c890a"
+    },
+    {
+      "path": "run_cases.py",
+      "bytes": 2073,
+      "sha256": "fa6099777fb8d52145fa309246b5988ed42985a7df202bff10bfbd65cbc06003"
+    },
+    {
+      "path": "run_new_geometry_windows.bat",
+      "bytes": 527,
+      "sha256": "dae15285766cb01684842e82db810b593b8dabad7cf2e66b5f106640af8ba205"
+    }
+  ]
+}
