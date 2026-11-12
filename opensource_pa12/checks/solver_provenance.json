@@ -1,0 +1,11 @@
+{
+  "solver": "OpenCourant",
+  "commit_banner": "cb760c206e346eff12161a2268b134ef9d48a4ef",
+  "platform": "Linux x86-64 double precision",
+  "binaries": {
+    "starter_linux64_gf": "0bbea37273656b270bea53cf756b115bcd5d9a8875a3c41283922a3b927719d1",
+    "engine_linux64_gf": "54cc9fc2a7cea6f1215afb6da9109d368650ff1fa7985625cb111f47d7e92be4",
+    "th_to_csv_linux64_gf": "704d647331ae4befd329d18b991d644f2af930abd117c5d204c23925f75fc8db",
+    "anim_to_vtk_linux64_gf": "9c97eee2991f6949d16477831cc684165f53b790f498cbef51b8e8fd67bf28ae"
+  }
+}

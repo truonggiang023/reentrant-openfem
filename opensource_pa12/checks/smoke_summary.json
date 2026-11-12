@@ -1,0 +1,18 @@
+{
+  "normal_termination": true,
+  "history_last_time_s": 0.001451618,
+  "requested_time_s": 0.0014588799976141607,
+  "last_strain": 0.09950222104449738,
+  "peak_nominal_stress_MPa": 1.3834999995502728,
+  "maximum_core_KE_IE_second_half": 0.0047171631988222815,
+  "last_reported_engine_energy_error_percent": -6.9,
+  "final_added_mass_tonne": -4.235165e-22,
+  "starter_warning_ids": [
+    343
+  ],
+  "full_size_candidate": false,
+  "target_strain": 0.1,
+  "paper_validated": false,
+  "force_method": "Signed time derivative of cumulative TH impulse; no absolute-value clipping",
+  "note": "Execution test only; contact gap treatment and geometry differ from Abaqus. No experimental validation or convergence study."
+}

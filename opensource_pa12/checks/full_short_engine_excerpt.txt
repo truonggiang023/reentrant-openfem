@@ -1,0 +1,18 @@
+ NC=     800 T= 8.9211E-05 DT= 1.0753E-07 ERR= -4.9% DM/M= 0.0000E+00
+ NC=     900 T= 9.9964E-05 DT= 1.0753E-07 ERR= -4.9% DM/M= 0.0000E+00
+ NC=    1000 T= 1.1072E-04 DT= 1.0753E-07 ERR= -4.8% DM/M= 0.0000E+00
+ NC=    1100 T= 1.2147E-04 DT= 1.0753E-07 ERR= -4.6% DM/M= 0.0000E+00
+ MINIMUM MEMORY PER PROCESSOR...............:      424 MB
+ AVERAGE MEMORY PER PROCESSOR...............:      424 MB
+  
+                   ** DISK USAGE STATISTICS **
+  
+ TOTAL DISK SPACE USED .....................:        210 MB
+ ANIMATION/H3D/TH/OUTP SIZE ................:         91 MB
+ RESTART FILE SIZE .........................:        118 MB
+  
+ ELAPSED TIME     =         44.15 s
+                          0:00:44
+  
+     NORMAL TERMINATION      
+     TOTAL NUMBER OF CYCLES  :    1161

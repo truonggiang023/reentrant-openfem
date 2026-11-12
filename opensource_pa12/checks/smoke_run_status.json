@@ -1,0 +1,16 @@
+{
+  "starter": {
+    "exit_code": 0,
+    "log": "/workspace/work/pa12_smoke_final/starter.log",
+    "executable": "/workspace/dependencies/opencourant/OpenCourant/exec/starter_linux64_gf",
+    "warning_ids": [
+      343
+    ],
+    "initial_penetration_warning_accepted": true
+  },
+  "engine": {
+    "exit_code": 0,
+    "log": "/workspace/work/pa12_smoke_final/engine.log",
+    "executable": "/workspace/dependencies/opencourant/OpenCourant/exec/engine_linux64_gf"
+  }
+}

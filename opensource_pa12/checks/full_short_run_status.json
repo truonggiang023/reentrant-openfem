@@ -1,0 +1,14 @@
+{
+  "starter": {
+    "exit_code": 0,
+    "log": "/workspace/work/pa12_full_short/starter.log",
+    "warning_ids": [
+      343
+    ],
+    "initial_penetration_warning_accepted": true
+  },
+  "engine": {
+    "exit_code": 0,
+    "log": "/workspace/work/pa12_full_short/engine.log"
+  }
+}
