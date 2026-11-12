@@ -70,27 +70,50 @@ Model được nhập từ input dưới dạng **orphan mesh**, không phải b
 
 Nếu CAE không nhập được một keyword, script báo lỗi import và giữ file INP cùng input-file Job; không coi import thành công là thay thế Data Check. Script mở hướng nhìn Front khi import được.
 
-## 5. Lấy stress–strain từ ODB
+## 5. Lấy stress–strain từ ODB — hỗ trợ CAE và Command
 
-Sau khi solver hoàn tất, dùng Abaqus Command:
+Dùng bản `Extract_Abaqus_NEW.py` phiên bản **2.1_GUI** trở lên. Job đã chạy xong thì chỉ cần xuất lại, không phải chạy lại phân tích.
+
+### Trong Abaqus/CAE
+
+1. Mở ODB kết quả và **hiển thị đúng ODB đó trong viewport đang hoạt động**.
+2. Chọn **File → Run Script → Extract_Abaqus_NEW.py**.
+3. Script dùng ODB đang hiển thị, tìm `model_metadata.json` cùng thư mục với ODB và ghi CSV ngay tại đó.
+
+Nếu mở nhiều ODB, script ưu tiên ODB trong viewport, không chọn cơ sở dữ liệu đầu tiên. Nếu không có ODB đang hiển thị và có nhiều ODB mở, script báo cần chọn rõ thay vì đoán. ODB đang xem không bị đóng sau khi xuất.
+
+Các tham số khởi động CAE như `--mlog` / `--lmlog` được bỏ qua. Chúng không còn bị hiểu thành đường dẫn metadata.
+
+Nếu cần chọn thủ công, sửa hai dòng ở đầu exporter, ví dụ:
+
+```python
+ODB_PATH = r'C:\temp\Reentrant_NEW_LOCAL_files\Reentrant_NEW_LOCAL.odb'
+METADATA_PATH = r'C:\temp\Reentrant_NEW_LOCAL_files\model_metadata.json'
+```
+
+Để trống hai biến thì dùng cách tự nhận diện ở trên. Console CAE in phiên bản exporter, ODB đã chọn, metadata và đường dẫn CSV để kiểm tra.
+
+### Trong Abaqus Command
 
 ```text
 abaqus python Extract_Abaqus_NEW.py "duong_dan/Reentrant_NEW_LOCAL.odb"
 ```
 
-Script tìm `model_metadata.json` bên cạnh ODB. Nếu metadata ở thư mục khác, truyền thêm đường dẫn:
+Nếu metadata ở thư mục khác, truyền thêm đường dẫn JSON:
 
 ```text
 abaqus python Extract_Abaqus_NEW.py "duong_dan/Job.odb" "duong_dan/model_metadata.json"
 ```
 
-Đầu ra:
+Không cần di chuyển file exporter vào thư mục ODB. Cần giữ đúng metadata của lần chạy; không tạo lại từ một cấu hình mesh khác.
 
-- `*_stress_strain.csv`: phản lực thô hai bàn, lực nén có dấu, engineering/nominal strain và stress.
-- `*_energy.csv`: năng lượng và tỉ số KE/IE, AE/IE.
-- `*_extraction_summary.json`: case, kích thước chuẩn hóa và trạng thái thời gian.
+Đầu ra bên cạnh ODB:
 
-Công thức dùng:
+- `*_stress_strain.csv`: phản lực thô hai bàn, lực nén có dấu, nominal strain/stress.
+- `*_energy.csv`: năng lượng, KE/IE và AE/IE.
+- `*_extraction_summary.json`: case, kích thước chuẩn hóa, phiên bản exporter và thời gian.
+
+Công thức:
 
 `strain = -U2_top / height_of_this_case`
 
@@ -98,9 +121,11 @@ Công thức dùng:
 
 `stress_bottom = +RF2_bottom / (width_of_this_case × 30)`
 
-Quy ước lực nén dương giả định lực constraint tại bàn trên theo -Y là RF2 âm; kiểm tra hai phản lực và cân bằng trước khi diễn giải. Không dùng abs(RF2) để che mất tiếp xúc hoặc sai dấu. Không dùng trung bình von Mises để thay nominal stress.
+Quy ước lực nén dương giả định lực constraint tại bàn trên theo -Y là RF2 âm; kiểm tra hai phản lực và cân bằng trước khi diễn giải. Không dùng abs(RF2) để che mất tiếp xúc hoặc sai dấu. Nominal stress từ phản lực là đại lượng dùng đối chiếu đường paper.
 
-Exporter từ chối ODB/step chưa đủ thời gian yêu cầu. Nếu chủ động chạy đến strain khác, đổi END_STRAIN trong script trước khi sinh input, để metadata khớp lần chạy.
+Exporter từ chối ODB/step chưa đủ thời gian yêu cầu. Nếu chủ động chạy đến strain khác, đổi END_STRAIN trong builder trước khi sinh input để metadata khớp lần chạy.
+
+Đã kiểm tra logic chọn active ODB khi mở hai database, bỏ qua `--lmlog`, nhận metadata CLI/GUI, giữ handle GUI mở và đóng handle do CLI tự tạo bằng đối tượng mô phỏng. Chưa có Abaqus kernel/ODB thật trong môi trường này để xác nhận chạy thực tế.
 
 ## 6. Đã kiểm tra đến đâu?
 
