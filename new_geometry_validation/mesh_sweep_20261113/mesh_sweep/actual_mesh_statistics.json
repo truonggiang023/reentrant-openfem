@@ -1,0 +1,42 @@
+[
+  {
+    "nominal_h_mm": 1.2,
+    "min_actual_inplane_edge_mm": 0.9999999999999999,
+    "max_actual_inplane_edge_mm": 1.1428572000000088,
+    "median_actual_inplane_edge_mm": 1.1250000262769846,
+    "depth_edge_mm": 30.0,
+    "max_depth_to_inplane_aspect_ratio": 30.000000000000004
+  },
+  {
+    "nominal_h_mm": 1.4,
+    "min_actual_inplane_edge_mm": 1.1249998853937724,
+    "max_actual_inplane_edge_mm": 1.3333334000000008,
+    "median_actual_inplane_edge_mm": 1.1250000262769846,
+    "depth_edge_mm": 30.0,
+    "max_depth_to_inplane_aspect_ratio": 26.666669383259006
+  },
+  {
+    "nominal_h_mm": 1.6,
+    "min_actual_inplane_edge_mm": 1.3333332999999925,
+    "max_actual_inplane_edge_mm": 1.6000000999999955,
+    "median_actual_inplane_edge_mm": 1.5000000177182884,
+    "depth_edge_mm": 30.0,
+    "max_depth_to_inplane_aspect_ratio": 22.50000056250014
+  },
+  {
+    "nominal_h_mm": 1.8,
+    "min_actual_inplane_edge_mm": 1.3333332999999925,
+    "max_actual_inplane_edge_mm": 1.6000000999999955,
+    "median_actual_inplane_edge_mm": 1.5000000177182884,
+    "depth_edge_mm": 30.0,
+    "max_depth_to_inplane_aspect_ratio": 22.50000056250014
+  },
+  {
+    "nominal_h_mm": 2.0,
+    "min_actual_inplane_edge_mm": 1.4999999411138332,
+    "max_actual_inplane_edge_mm": 2.000000000000001,
+    "median_actual_inplane_edge_mm": 1.5000000177182884,
+    "depth_edge_mm": 30.0,
+    "max_depth_to_inplane_aspect_ratio": 20.000000785148924
+  }
+]

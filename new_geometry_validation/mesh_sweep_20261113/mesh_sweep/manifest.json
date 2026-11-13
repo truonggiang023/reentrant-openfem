@@ -1,0 +1,37 @@
+{
+  "baseline_2mm_exactly_reproduced": true,
+  "cases": [
+    {
+      "mesh_mm": 1.2,
+      "nodes": 3302,
+      "elements": 1748,
+      "mesh_sha256": "6c0f4f31922599e9923f711787116813572588d5256d686319de3a2692e4ae1a",
+      "directory": "mesh_sweep/mesh_1.2",
+      "original_cloud_directory": "/workspace/output/uploaded_corrected_validation/mesh_sweep/mesh_1.2"
+    },
+    {
+      "mesh_mm": 1.4,
+      "nodes": 3046,
+      "elements": 1620,
+      "mesh_sha256": "2bca4427e01cbefc2bc4a8f1aaab2c596914237f6a48de5cb61e5464376f92d0",
+      "directory": "mesh_sweep/mesh_1.4",
+      "original_cloud_directory": "/workspace/output/uploaded_corrected_validation/mesh_sweep/mesh_1.4"
+    },
+    {
+      "mesh_mm": 1.6,
+      "nodes": 2372,
+      "elements": 1283,
+      "mesh_sha256": "7abe287d1392de9c27716ea1d3d858a3028e6805c6f932278243729987d02825",
+      "directory": "mesh_sweep/mesh_1.6",
+      "original_cloud_directory": "/workspace/output/uploaded_corrected_validation/mesh_sweep/mesh_1.6"
+    },
+    {
+      "mesh_mm": 1.8,
+      "nodes": 2372,
+      "elements": 1283,
+      "mesh_sha256": "7abe287d1392de9c27716ea1d3d858a3028e6805c6f932278243729987d02825",
+      "directory": "mesh_sweep/mesh_1.8",
+      "original_cloud_directory": "/workspace/output/uploaded_corrected_validation/mesh_sweep/mesh_1.8"
+    }
+  ]
+}

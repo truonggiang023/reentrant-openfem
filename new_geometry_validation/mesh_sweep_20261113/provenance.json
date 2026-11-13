@@ -1,0 +1,11 @@
+{
+  "solver": "OpenCourant (OpenRadioss continuation), native explicit solver",
+  "engine_sha256": "54cc9fc2a7cea6f1215afb6da9109d368650ff1fa7985625cb111f47d7e92be4",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "threads": 2,
+  "input_zip_sha256": "b99407406bb15daf30600e5c111e5ce1d4d7a3bbae4c01a42bf5e0e117e2d9b8",
+  "source_mesh": "Uploaded reference_preview/Reentrant_NEW_LOCAL.inp; specimen nodes and connectivity imported directly",
+  "result_reuse": false,
+  "run_command": "python code/run_solver.py run --threads 2 --vtk",
+  "generated_at_UTC": "2026-11-13T02:25:17.700135+00:00"
+}

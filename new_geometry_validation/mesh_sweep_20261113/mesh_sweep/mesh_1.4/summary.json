@@ -1,0 +1,16 @@
+{
+  "normal_termination": true,
+  "history_last_time_s": 0.2612275,
+  "requested_time_s": 0.26253999955265506,
+  "last_strain": 0.49750038174203653,
+  "peak_nominal_stress_MPa": 1.4822590291137285,
+  "maximum_core_KE_IE_second_half": 3.953180762808051e-05,
+  "last_reported_engine_energy_error_percent": -14.1,
+  "final_added_mass_tonne": 1.761829e-19,
+  "starter_warning_ids": [],
+  "full_size_candidate": true,
+  "target_strain": 0.5,
+  "paper_validated": false,
+  "force_method": "Signed time derivative of cumulative TH impulse; no absolute-value clipping",
+  "note": "Normal termination does not establish paper validation. Quantitative comparison and depth-mesh checks are reported separately; geometry assumptions remain unresolved."
+}

@@ -1,0 +1,277 @@
+{
+  "cases": [
+    {
+      "mesh_mm": 1.2,
+      "nodes": 3302,
+      "elements": 1748,
+      "z_layers": 1,
+      "normal_termination": true,
+      "last_recorded_strain": 0.4975001912948663,
+      "elapsed_seconds": 894.18,
+      "E_MPa": 11.277996616511412,
+      "E_error_vs_paper_9_7_percent": 16.268006355787755,
+      "stress_at_0_2_MPa": 0.5897099243992103,
+      "stress_at_0_4_MPa": 1.28681904841825,
+      "engine_energy_error_percent": -9.8,
+      "starter_warning_ids": [
+        343
+      ],
+      "initial_self_contact_penetrations": 60,
+      "mesh_sha256": "6c0f4f31922599e9923f711787116813572588d5256d686319de3a2692e4ae1a",
+      "paper_comparisons": {
+        "Alomarah_Fig9_S1": {
+          "window": [
+            0.06,
+            0.4
+          ],
+          "RMSE_MPa": 0.06918217341227131,
+          "NRMSE_over_mean_percent": 8.762857778896478
+        },
+        "Chen_Fig4_experiment": {
+          "window": [
+            0.06,
+            0.4
+          ],
+          "RMSE_MPa": 0.06329334918664685,
+          "NRMSE_over_mean_percent": 8.847880756352733
+        }
+      },
+      "native_input_sha256": {
+        "compression_0000.rad": "9ee7288bd4f40cd9ce2ec6e23c61897947215f918984c84b9ebaf6952dfe0197",
+        "compression_0001.rad": "09f4aefe550aebf8e3427a745b8e6eee5db12ab0ebd46d6a9785e184388e671e"
+      },
+      "max_core_KE_IE_0_06_to_0_40": 0.0008618873019223456,
+      "top_bottom_force_RMS_relative_percent": 0.038436232039549795,
+      "absorbed_energy_density_to_0_49_MPa": 0.4187108814173218,
+      "versus_finest_1_2": {
+        "window": [
+          0.02,
+          0.49
+        ],
+        "RMSE_MPa": 0.0,
+        "NRMSE_over_finest_mean_percent": 0.0,
+        "max_absolute_difference_MPa": 0.0,
+        "E_difference_percent": 0.0,
+        "energy_density_difference_percent": 0.0
+      }
+    },
+    {
+      "mesh_mm": 1.4,
+      "nodes": 3046,
+      "elements": 1620,
+      "z_layers": 1,
+      "normal_termination": true,
+      "last_recorded_strain": 0.49750038174203653,
+      "elapsed_seconds": 643.52,
+      "E_MPa": 11.30275094183631,
+      "E_error_vs_paper_9_7_percent": 16.52320558594136,
+      "stress_at_0_2_MPa": 0.5936641365573561,
+      "stress_at_0_4_MPa": 1.0987033574105676,
+      "engine_energy_error_percent": -14.1,
+      "starter_warning_ids": [],
+      "initial_self_contact_penetrations": 0,
+      "mesh_sha256": "2bca4427e01cbefc2bc4a8f1aaab2c596914237f6a48de5cb61e5464376f92d0",
+      "paper_comparisons": {
+        "Alomarah_Fig9_S1": {
+          "window": [
+            0.06,
+            0.4
+          ],
+          "RMSE_MPa": 0.12106382517555286,
+          "NRMSE_over_mean_percent": 15.334370544571296
+        },
+        "Chen_Fig4_experiment": {
+          "window": [
+            0.06,
+            0.4
+          ],
+          "RMSE_MPa": 0.0724440480870293,
+          "NRMSE_over_mean_percent": 10.127071915428784
+        }
+      },
+      "native_input_sha256": {
+        "compression_0000.rad": "027fc1880936aa95d9076bbce6d684a7ce98987e4b914484d54df128daa83845",
+        "compression_0001.rad": "09f4aefe550aebf8e3427a745b8e6eee5db12ab0ebd46d6a9785e184388e671e"
+      },
+      "max_core_KE_IE_0_06_to_0_40": 0.0007856096854721744,
+      "top_bottom_force_RMS_relative_percent": 0.10449467252071122,
+      "absorbed_energy_density_to_0_49_MPa": 0.3725254558948101,
+      "versus_finest_1_2": {
+        "window": [
+          0.02,
+          0.49
+        ],
+        "RMSE_MPa": 0.14977452931299004,
+        "NRMSE_over_finest_mean_percent": 16.89968587682738,
+        "max_absolute_difference_MPa": 0.3760349418810065,
+        "E_difference_percent": 0.21949222159418635,
+        "energy_density_difference_percent": -11.030385779843034
+      }
+    },
+    {
+      "mesh_mm": 1.6,
+      "nodes": 2372,
+      "elements": 1283,
+      "z_layers": 1,
+      "normal_termination": true,
+      "last_recorded_strain": 0.4975007626363771,
+      "elapsed_seconds": 455.44,
+      "E_MPa": 11.89138194663443,
+      "E_error_vs_paper_9_7_percent": 22.59156646014877,
+      "stress_at_0_2_MPa": 0.5809958440209083,
+      "stress_at_0_4_MPa": 1.11707263183091,
+      "engine_energy_error_percent": -7.9,
+      "starter_warning_ids": [],
+      "initial_self_contact_penetrations": 0,
+      "mesh_sha256": "7abe287d1392de9c27716ea1d3d858a3028e6805c6f932278243729987d02825",
+      "paper_comparisons": {
+        "Alomarah_Fig9_S1": {
+          "window": [
+            0.06,
+            0.4
+          ],
+          "RMSE_MPa": 0.10933629546128737,
+          "NRMSE_over_mean_percent": 13.848920320689452
+        },
+        "Chen_Fig4_experiment": {
+          "window": [
+            0.06,
+            0.4
+          ],
+          "RMSE_MPa": 0.0671087098371786,
+          "NRMSE_over_mean_percent": 9.381236259137651
+        }
+      },
+      "native_input_sha256": {
+        "compression_0000.rad": "9990913c866f1e19bab05ecfb98023b1c7b4bdaccffb2f80094cf4b25ec6acc4",
+        "compression_0001.rad": "09f4aefe550aebf8e3427a745b8e6eee5db12ab0ebd46d6a9785e184388e671e"
+      },
+      "max_core_KE_IE_0_06_to_0_40": 0.0021212815176984,
+      "top_bottom_force_RMS_relative_percent": 0.02754615739367845,
+      "absorbed_energy_density_to_0_49_MPa": 0.4130243307247324,
+      "versus_finest_1_2": {
+        "window": [
+          0.02,
+          0.49
+        ],
+        "RMSE_MPa": 0.11396568921024623,
+        "NRMSE_over_finest_mean_percent": 12.85922484432909,
+        "max_absolute_difference_MPa": 0.4276114720454236,
+        "E_difference_percent": 5.438779164244467,
+        "energy_density_difference_percent": -1.3581091261207878
+      }
+    },
+    {
+      "mesh_mm": 1.8,
+      "nodes": 2372,
+      "elements": 1283,
+      "z_layers": 1,
+      "normal_termination": true,
+      "last_recorded_strain": 0.4975007626363771,
+      "elapsed_seconds": 421.52,
+      "E_MPa": 11.89138194663443,
+      "E_error_vs_paper_9_7_percent": 22.59156646014877,
+      "stress_at_0_2_MPa": 0.5809958440209083,
+      "stress_at_0_4_MPa": 1.11707263183091,
+      "engine_energy_error_percent": -7.9,
+      "starter_warning_ids": [],
+      "initial_self_contact_penetrations": 0,
+      "mesh_sha256": "7abe287d1392de9c27716ea1d3d858a3028e6805c6f932278243729987d02825",
+      "paper_comparisons": {
+        "Alomarah_Fig9_S1": {
+          "window": [
+            0.06,
+            0.4
+          ],
+          "RMSE_MPa": 0.10933629546128737,
+          "NRMSE_over_mean_percent": 13.848920320689452
+        },
+        "Chen_Fig4_experiment": {
+          "window": [
+            0.06,
+            0.4
+          ],
+          "RMSE_MPa": 0.0671087098371786,
+          "NRMSE_over_mean_percent": 9.381236259137651
+        }
+      },
+      "native_input_sha256": {
+        "compression_0000.rad": "9990913c866f1e19bab05ecfb98023b1c7b4bdaccffb2f80094cf4b25ec6acc4",
+        "compression_0001.rad": "09f4aefe550aebf8e3427a745b8e6eee5db12ab0ebd46d6a9785e184388e671e"
+      },
+      "max_core_KE_IE_0_06_to_0_40": 0.0021212815176984,
+      "top_bottom_force_RMS_relative_percent": 0.02754615739367845,
+      "absorbed_energy_density_to_0_49_MPa": 0.4130243307247324,
+      "versus_finest_1_2": {
+        "window": [
+          0.02,
+          0.49
+        ],
+        "RMSE_MPa": 0.11396568921024623,
+        "NRMSE_over_finest_mean_percent": 12.85922484432909,
+        "max_absolute_difference_MPa": 0.4276114720454236,
+        "E_difference_percent": 5.438779164244467,
+        "energy_density_difference_percent": -1.3581091261207878
+      }
+    },
+    {
+      "mesh_mm": 2.0,
+      "nodes": 2116,
+      "elements": 1155,
+      "z_layers": 1,
+      "normal_termination": true,
+      "last_recorded_strain": 0.4975001912948663,
+      "elapsed_seconds": 308.68,
+      "E_MPa": 11.920158483426684,
+      "E_error_vs_paper_9_7_percent": 22.88823178790398,
+      "stress_at_0_2_MPa": 0.6117119471553618,
+      "stress_at_0_4_MPa": 1.1752526380455524,
+      "engine_energy_error_percent": -10.7,
+      "starter_warning_ids": [],
+      "initial_self_contact_penetrations": 0,
+      "mesh_sha256": null,
+      "paper_comparisons": {
+        "Alomarah_Fig9_S1": {
+          "window": [
+            0.06,
+            0.4
+          ],
+          "RMSE_MPa": 0.08999859890325304,
+          "NRMSE_over_mean_percent": 11.399539557530982
+        },
+        "Chen_Fig4_experiment": {
+          "window": [
+            0.06,
+            0.4
+          ],
+          "RMSE_MPa": 0.0760846653196268,
+          "NRMSE_over_mean_percent": 10.63599975014576
+        }
+      },
+      "native_input_sha256": {
+        "compression_0000.rad": "cafcc253fa6a6435acb2dd436085b6292f4be79b4568fff6459d0c87c83b9af9",
+        "compression_0001.rad": "09f4aefe550aebf8e3427a745b8e6eee5db12ab0ebd46d6a9785e184388e671e"
+      },
+      "max_core_KE_IE_0_06_to_0_40": 0.0019594867785711415,
+      "top_bottom_force_RMS_relative_percent": 0.044296180613725124,
+      "absorbed_energy_density_to_0_49_MPa": 0.4115103914425265,
+      "versus_finest_1_2": {
+        "window": [
+          0.02,
+          0.49
+        ],
+        "RMSE_MPa": 0.06030783490562204,
+        "NRMSE_over_finest_mean_percent": 6.804784969056708,
+        "max_absolute_difference_MPa": 0.2095796247484405,
+        "E_difference_percent": 5.693935623062019,
+        "energy_density_difference_percent": -1.7196806422660749
+      }
+    }
+  ],
+  "mesh_1_6_and_1_8_identical": true,
+  "identical_mesh_repeat_RMSE_MPa": 0.0,
+  "baseline_2mm_geometry_exactly_reproduced": true,
+  "paper_validation_established": false,
+  "full_3D_mesh_convergence_established": false,
+  "note": "Nominal mesh controls ceil(member_length/mesh); 1.6 and 1.8 give identical actual meshes. All cases retain one 30 mm depth subdivision. Contact effective gaps are mesh-dependent under fixed TYPE7 controls. No Richardson order or GCI inferred."
+}

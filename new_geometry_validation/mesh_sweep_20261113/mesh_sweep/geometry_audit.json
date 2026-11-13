@@ -1,0 +1,82 @@
+[
+  {
+    "mesh_mm": 1.2,
+    "all_nodes_connected": true,
+    "actual_shell_mass_g": 47.340000007775814,
+    "centerline_mass_g": 47.33999999896465,
+    "minimum_xyz": [
+      0.4,
+      0.4,
+      0.0
+    ],
+    "maximum_xyz": [
+      77.0118363,
+      52.1079999,
+      30.0
+    ]
+  },
+  {
+    "mesh_mm": 1.4,
+    "all_nodes_connected": true,
+    "actual_shell_mass_g": 47.340000007776375,
+    "centerline_mass_g": 47.33999999896465,
+    "minimum_xyz": [
+      0.4,
+      0.4,
+      0.0
+    ],
+    "maximum_xyz": [
+      77.0118363,
+      52.1079999,
+      30.0
+    ]
+  },
+  {
+    "mesh_mm": 1.6,
+    "all_nodes_connected": true,
+    "actual_shell_mass_g": 47.340000007776595,
+    "centerline_mass_g": 47.33999999896465,
+    "minimum_xyz": [
+      0.4,
+      0.4,
+      0.0
+    ],
+    "maximum_xyz": [
+      77.0118363,
+      52.1079999,
+      30.0
+    ]
+  },
+  {
+    "mesh_mm": 1.8,
+    "all_nodes_connected": true,
+    "actual_shell_mass_g": 47.340000007776595,
+    "centerline_mass_g": 47.33999999896465,
+    "minimum_xyz": [
+      0.4,
+      0.4,
+      0.0
+    ],
+    "maximum_xyz": [
+      77.0118363,
+      52.1079999,
+      30.0
+    ]
+  },
+  {
+    "mesh_mm": 2.0,
+    "all_nodes_connected": true,
+    "actual_shell_mass_g": 47.340000007776595,
+    "centerline_mass_g": 47.33999999896465,
+    "minimum_xyz": [
+      0.4,
+      0.4,
+      0.0
+    ],
+    "maximum_xyz": [
+      77.0118363,
+      52.1079999,
+      30.0
+    ]
+  }
+]
