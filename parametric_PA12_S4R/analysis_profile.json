@@ -1,0 +1,82 @@
+{
+  "profile_id": "PA12_initial_BC_S4R",
+  "material": "PA12",
+  "E_MPa": 1300.0,
+  "nu": 0.33,
+  "density_tonne_per_mm3": 1e-09,
+  "plastic_stress_plastic_strain": [
+    [
+      38,
+      0
+    ],
+    [
+      40,
+      0.05
+    ],
+    [
+      44,
+      0.06
+    ],
+    [
+      48,
+      0.07
+    ],
+    [
+      51.6,
+      0.08
+    ],
+    [
+      52.8,
+      0.09
+    ],
+    [
+      55,
+      0.1
+    ],
+    [
+      55.8,
+      0.11
+    ],
+    [
+      56.2,
+      0.12
+    ]
+  ],
+  "material_source": "Table-2 average, same as prior validation package, not exact Test-1",
+  "damage": false,
+  "mass_scaling": false,
+  "core_element": "S4R",
+  "rigid_platen_element": "R3D4",
+  "shell_integration_points": 5,
+  "friction": 0.25,
+  "loading_direction": "Y",
+  "bottom_dofs_fixed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "top_guided_dofs_fixed": [
+    1,
+    3,
+    4,
+    5,
+    6
+  ],
+  "top_velocity_y_mm_s": -100.0,
+  "target_strain": 0.5,
+  "amplitude": "constant velocity; no ramp",
+  "constrain_core_out_of_plane": false,
+  "clearance_each_platen_mm": 0.002,
+  "history_intervals": 1000,
+  "field_intervals": 200,
+  "bulk_viscosity": [
+    0.06,
+    1.2
+  ],
+  "inplane_mesh_mm": 2.0,
+  "z_layers": 1,
+  "platen_size_policy": "Fixed 76 x 25 mm contact footprint from user geometry source; never automatically resized"
+}

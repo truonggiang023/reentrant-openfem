@@ -1,0 +1,153 @@
+{
+  "case_id": "G_f797909f2759",
+  "geometry_id": "f797909f275911b1db7620d2468e45b11d13decbc3365257b22778f82aa7de29",
+  "analysis_id": "87b71cc6b6e3a1b29c67e5e81ab685362ac745ecbbfa40214c4db4543d50bc7d",
+  "lambda_m": -1.0,
+  "geometry_inputs": {
+    "L1": 12.0,
+    "L2": 12.0,
+    "L_BEVEL": 5.66,
+    "CORE_WALL_T": 0.3,
+    "N_ROWS": 6,
+    "N_COLS": 5,
+    "CORE_HEIGHT": 47.7,
+    "DEPTH": 25
+  },
+  "material": "PA12",
+  "core_element": "S4R",
+  "platen_element": "R3D4",
+  "source_sha256": "469bf97d1c4caee26d6f369a1d5ec1fe266acc2e0002d3193d374254ee7e6e9a",
+  "profile_sha256": "7c4d88a39122db27dc6087bcf733a9e1bb86367dd7ef788f8c602ecfab6fea0c",
+  "midsurface_segments": 179,
+  "connected": true,
+  "graph_holes": 50,
+  "shell_envelope_xy_mm": [
+    -4.1346093439719,
+    -0.15,
+    144.36872791495867,
+    47.85
+  ],
+  "width_mm": 148.50333725893057,
+  "height_mm": 48.0,
+  "depth_mm": 25,
+  "wall_mm": 0.3,
+  "solid_source_miter_width_mm": 148.71981802411514,
+  "actual_inclined_length_mm": 5.66,
+  "pitch_x_mm": 32.058529642558874,
+  "platen_contact_width_mm": 76.0,
+  "platen_contact_depth_mm": 25.0,
+  "platen_covers_shell_width": false,
+  "width_coverage_fraction": 0.5117730106461266,
+  "source_reference_area_mm2": 1900.0,
+  "engineering_reference_area_mm2": 3712.583431473264,
+  "shell_volume_mm3": 10404.000000013197,
+  "shell_mass_g": 10.404000000013198,
+  "normalization": "Undeformed shell-thickness envelope width*depth and envelope height; not platen area",
+  "source_representation_note": "Source centerlines and thickness retained; solid miter-joint geometry is replaced by a midsurface shell idealization as requested",
+  "solver_executed": false,
+  "paper_validated": false,
+  "job_name": "PA12_G_f797909f2759",
+  "model_name": "PA12_G_f797909f2759",
+  "input_file": "PA12_G_f797909f2759.inp",
+  "shell_nodes": 1330,
+  "shell_elements": 714,
+  "top_rp": 1340,
+  "bottom_rp": 1335,
+  "duration_s": 0.24,
+  "history_time_interval_s": 0.00023999999999999998,
+  "analysis_profile": {
+    "profile_id": "PA12_initial_BC_S4R",
+    "material": "PA12",
+    "E_MPa": 1300.0,
+    "nu": 0.33,
+    "density_tonne_per_mm3": 1e-09,
+    "plastic_stress_plastic_strain": [
+      [
+        38,
+        0
+      ],
+      [
+        40,
+        0.05
+      ],
+      [
+        44,
+        0.06
+      ],
+      [
+        48,
+        0.07
+      ],
+      [
+        51.6,
+        0.08
+      ],
+      [
+        52.8,
+        0.09
+      ],
+      [
+        55,
+        0.1
+      ],
+      [
+        55.8,
+        0.11
+      ],
+      [
+        56.2,
+        0.12
+      ]
+    ],
+    "material_source": "Table-2 average, same as prior validation package, not exact Test-1",
+    "damage": false,
+    "mass_scaling": false,
+    "core_element": "S4R",
+    "rigid_platen_element": "R3D4",
+    "shell_integration_points": 5,
+    "friction": 0.25,
+    "loading_direction": "Y",
+    "bottom_dofs_fixed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "top_guided_dofs_fixed": [
+      1,
+      3,
+      4,
+      5,
+      6
+    ],
+    "top_velocity_y_mm_s": -100.0,
+    "target_strain": 0.5,
+    "amplitude": "constant velocity; no ramp",
+    "constrain_core_out_of_plane": false,
+    "clearance_each_platen_mm": 0.002,
+    "history_intervals": 1000,
+    "field_intervals": 200,
+    "bulk_viscosity": [
+      0.06,
+      1.2
+    ],
+    "inplane_mesh_mm": 2.0,
+    "z_layers": 1,
+    "platen_size_policy": "Fixed 76 x 25 mm contact footprint from user geometry source; never automatically resized"
+  },
+  "submitted": false,
+  "abaqus_solver_tested": false,
+  "width": 148.50333725893057,
+  "height": 48.0,
+  "depth": 25,
+  "duration": 0.24,
+  "speed": 100.0,
+  "end_strain": 0.5,
+  "area_reference_mm2": 3712.583431473264,
+  "height_reference_mm": 48.0,
+  "step": "COMPRESS",
+  "case": "SOURCE_LAMBDA_SHELL",
+  "builder_sha256": "711633d016bde24121d727e4b6565875a7a14cf278f7e52aff0019ab9c5c9bdd"
+}
